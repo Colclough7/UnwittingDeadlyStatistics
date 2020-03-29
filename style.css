@@ -1,0 +1,47 @@
+:root{
+  --main-bg-color:#f5f9fd;
+  --progress-color: #2b1331;
+  --progress-bg-color: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
+  --progress-done-color: #f8ceec;
+  --progress-done-bg-color: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  --progress-done-box-shadow:  0 3px 3px -5px #a88beb, 0 2px 5px #a88beb;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.progress{
+  background-color: var(--progress-color);
+  background-image: var(--progress-bg-color);
+  width: 300px;
+  height:20px;
+  border-radius: 20px;
+}
+
+.progress-done{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 97%;
+  width: 100px;
+  background-color: var(--progress-done-color);
+  background-image: var(--progress-done-bg-color);
+  box-shadow:  var(--progress-done-box-shadow);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  font-weight: 900;
+
+}
